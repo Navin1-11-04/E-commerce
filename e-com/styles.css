@@ -1,0 +1,252 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Global reset and font family */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Setting body size */
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Hiding scrollbar in webkit browsers */
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header styles */
+header {
+    height: 10vh;
+    width: 100%;
+    background-color: #2c2c2c;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 1vh 4vh 1vh 8vh;
+    align-items: last baseline;
+}
+
+/* Navigation styles */
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2.5vh;
+}
+
+/* Navigation link styles */
+nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav li a:hover {
+    color: rgb(42, 200, 217);
+    text-decoration: underline;
+    text-underline-offset: 0.8vh;
+    text-decoration-color: grey;
+}
+
+/* User profile styles */
+header .user {
+    display: flex;
+    gap: 1vh;
+    background-color: #fff;
+    padding: 1vh 2vh;
+    border-radius: 50px;
+}
+
+header .user:hover {
+    background-color: rgb(42, 200, 217);
+    color: #fff;
+}
+
+/* Page wrapper styles */
+.page-wrapper {
+    width: 100%;
+    padding: 3vh 15%;
+}
+
+/* Heading styles */
+.page-wrapper h4 {
+    text-align: center;
+    margin-bottom: 5vh;
+    text-decoration: underline;
+    text-underline-offset: 1.2vh;
+    text-decoration-thickness: 1px;
+}
+
+.page-wrapper h5 {
+    margin: 2vh 0;
+}
+
+/* Grid container styles */
+.page-wrapper .container {
+    display: grid;
+    column-gap:4%;
+    row-gap:4%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 990px) {
+    .page-wrapper .container {
+        grid-template-columns: repeat(2, 1fr); /* Adjusting to two columns for smaller screens */
+    }
+}
+
+/* Card styles */
+.page-wrapper .container .card {
+    width:100%;
+    height:100%;
+    position: relative;
+    text-align: center;
+    border-radius:0.5vh;
+}
+
+.page-wrapper .card img {
+    width: 100%;
+    height:75%;
+    margin-bottom:5%;
+    border-radius: 1vh;
+}
+.page-wrapper .even img{
+    width: 100%;
+    height:65%;
+    border-radius:1.5vh;
+}
+
+.page-wrapper .card p ,h2{
+    font-size: 2vh;
+    padding: 0 1vh;
+    margin-bottom: 0.5vh;
+}
+.page-wrapper .card .price {
+    display: flex;
+    padding: 0 0.3vh;
+    margin-top: 2vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-wrapper .card button {
+    padding: 1vh 1.5vh;
+    border-radius: 1.5vh;
+    outline: none;
+    border: none;
+    text-align: center;
+    color: #2c2c2c;
+    background-color: #fff;
+}
+
+.page-wrapper .card button:hover {
+    background-color: rgb(42, 200, 217);
+    color: #fff;
+}
+
+/* Product page styles */
+/* Product page styles */
+.products{
+    height: 90vh;
+    width: 100%;
+    padding:2% 10%;
+    display: flex;
+    justify-content: center;
+}
+.page-wrapper .container{
+    margin-bottom:10vh;
+}
+.product-wrapper {
+    height: 90%;
+    width: 80%;
+    display: flex;
+}
+.product-wrapper .right{
+    display: flex;
+    flex-direction: column;
+    margin:1vh 2vh;
+    padding:2vh 1vh; 
+}
+@media screen and (max-width: 990px){
+    .products{
+        height: 90vh;
+        width: 100%;
+        padding:2% 5%;
+        display: flex;
+        justify-content: center;
+    }
+    .product-wrapper {
+        height:90%;
+        width: 100%;
+        display: flex;
+    }
+    .product-wrapper .right{
+        display: flex;
+        flex-direction: column;
+        margin:0 2vh;
+        padding:0vh 1vh; 
+    }
+}
+.product-wrapper .left img{
+    height: 100%;
+    width: auto;
+    border-radius:0.5vh;
+}
+.product-wrapper .right h3{
+    margin-bottom:2vh;
+    text-align: center;
+}
+.product-wrapper .right ul{
+    list-style:circle;
+    margin:1vh 3.5vh;
+}
+
+.product-wrapper .right ul li {
+    font-size: 1.8vh;
+    margin-bottom: 1vh;
+}
+.product-wrapper .right .likes{
+    margin:2vh 0;
+    display:grid;
+}
+.product-wrapper .right .h5{
+    font-weight: 200;
+}
+.colors {
+    display: flex;
+    margin:2.5vh 0;
+    width:70%;
+    gap:2%;
+    height:4vh;
+}
+
+.col {
+   height:4vh;
+   width:15%;
+}
+
+.product-wrapper .grp-btn {
+    display: flex;
+    align-items: center;
+}
+
+.product-wrapper .grp-btn button {
+    padding: 1vh 3vh;
+    border-radius: 1vh;
+    outline: none;
+    border: none;
+    text-align: center;
+    color:#fff;
+    background-color:#2c2c2c;
+    margin-right: 1vh;
+}
+
+.product-wrapper .grp-btn button:hover {
+    background-color: rgb(42, 200, 217);
+    color: #fff;
+}
