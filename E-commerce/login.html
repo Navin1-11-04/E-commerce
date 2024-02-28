@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h4 style="color:#fff;">LOGO</h4>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" target="_blank">Men</a></li>
+                <li><a href="#" target="_blank">Women</a></li>
+                <li><a href="#" target="_blank">Kids</a></li>
+            </ul>
+        </nav>
+        <div class="user">
+            <h4 style="color:#fff;font-weight:100;">Hi, Navin</h4>
+            <button id="btn-log"><img src="assets\caret-down-solid.svg" alt="cart-down"></button>
+            <img src="assets\user-solid.svg" alt="user profile" width="15px" id="profile">
+        </div>
+       </header>
+    <div class="login-container">
+        <div class="form">
+            <div class="login">
+                <h3 style="text-align: center;margin-bottom:3vh;">LOGIN</h3>
+                <label for="username">User Name</label>
+                <input type="text" placeholder="--Your name--" id="username" name="user name" required>
+                <label for="password">Password</label>
+                <input type="password" placeholder="--Your password--" id="password" name="upassword" required>
+                <h5><a href="#" style="text-decoration: none;color:red;font-weight: 400;">Forgot your password?</a></h5>
+                <div class="submit">
+                    <button type="submit">Login</button>
+                </div>
+                <p style="margin:1vh 0;">using social profiles</p>
+                <div class="socials">
+                    <img src="assets\google.svg" alt="Google">
+                    <img src="assets\facebook.svg" alt="Facebook">
+                </div>
+                <div class="option">
+                    <p>Don't have an account,<a href="#">Sign up</a></p>
+                </div>
+            </div>
+            <div class="banner">
+                <h2>Welcome back!</h2>
+                <p id="welcome">To keep connected with us please login with your personal info</p>
+                <p>Don't have an account?</p>
+                <button>Sign up</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
